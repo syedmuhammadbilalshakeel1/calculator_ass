@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #7a3a6e;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 3px, transparent 3px);
+  background-size: 36px 36px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.innercontaioner {
+  width: 100%;
+  max-width: 400px;
+  background: #fdfbfd;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(30, 5, 35, 0.45);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 28px 0;
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f1235;
+}
+
+.menu {
+  color: #f0638f;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Display */
+.inputferild {
+  height: 230px;
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.expression ,input {
+  font-size: 48px;
+  font-weight: 500;
+  color: #1f1235;
+  line-height: 1.1;
+  width: 100%;
+     text-align: right;
+
+}
+
+.result {
+  margin-top: 14px;
+  font-size: 18px;
+  color: #f0638f;
+}
+
+/* Buttons */
+.numabutton {
+  background: #ffffff;
+}
+
+.numabutton table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 2px;
+  background: #ffffff;
+}
+
+.numabutton td {
+  width: 25%;
+  height: 84px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: 500;
+  color: #1f1235;
+  background: #f6f5f6;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.15s;
+}
+
+.numabutton td:hover {
+  background: #ebe8eb;
+}
+
+.numabutton td.op {
+  color: #f0638f;
+  font-size: 26px;
+}
+
+.numabutton td.equal {
+  background: #2a1233;
+  color: #f0638f;
+  box-shadow: 0 10px 25px rgba(42, 18, 51, 0.5);
+}
+
+.numabutton td.equal:hover {
+  background: #3a1a47;
+}

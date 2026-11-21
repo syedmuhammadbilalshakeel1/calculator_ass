@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="innercontaioner">
+    
+            <div class="header">
+                <h1>Calculator</h1>
+                <span class="menu">&#8942;</span>
+            </div>
+    
+            <div class="inputferild">
+                <div class="expression"><input type="text" disabled id="input" ></div>
+                <div class="result"></div>
+            </div>
+    
+            <div class="numabutton">
+                <table>
+                    <tr>
+                        <td onclick="clearAll()">C</td>
+                        <td onclick="removeOne()">&#9003;</td>
+                        <td>()</td>
+                        <td class="op" onclick="setInput('+')">+</td>
+                    </tr>
+                    <tr>
+                        <td onclick="setInput(7)">7</td>
+                        <td onclick="setInput(8)">8</td>
+                        <td onclick="setInput(9)">9</td>
+                        <td class="op" onclick="setInput('-')">&minus;</td>
+                    </tr>
+                    <tr>
+                        <td onclick="setInput(4)">4</td>
+                        <td onclick="setInput(5)">5</td>
+                        <td onclick="setInput(6)">6</td>
+                        <td class="op" onclick="setInput('*')">&times;</td>
+                    </tr>
+                    <tr>
+                        <td onclick="setInput(1)">1</td>
+                        <td onclick="setInput(2)">2</td>
+                        <td onclick="setInput(3)">3</td>
+                        <td class="op" onclick="setInput('/')">&divide;</td>
+                    </tr>
+                    <tr>
+                        <td onclick="setInput('.')">.</td>
+                        <td onclick="setInput(0)">0</td>
+                        <td >%</td>
+                        <td class="equal" onclick="calcAns()">=</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
